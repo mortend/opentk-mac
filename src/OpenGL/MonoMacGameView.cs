@@ -488,6 +488,10 @@ namespace OpenTK.Platform.MacOS
 
 		private void RenderScene ()
 		{
+			// This fixes rendering with Xcode 10 (macOS Mojave) and newer.
+			// https://github.com/xamarin/xamarin-macios/issues/4959#issuecomment-621914507
+			if (openGLContext.View == null)
+				openGLContext.View = this;
 
 			// This method will be called on both the main thread (through DrawRect:) and a secondary thread (through the display link rendering loop)
 			// Also, when resizing the view, Reshape is called on the main thread, but we may be drawing on a secondary thread
