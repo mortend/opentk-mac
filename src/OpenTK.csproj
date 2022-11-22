@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-macOS</TargetFramework>
+    <RootNamespace>OpenTK</RootNamespace>
+    <AssemblyName>OpenTK</AssemblyName>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <NoWarn>CA1416;CS3021</NoWarn>
+    <DefineConstants>OPENTK_DLL;OPENTK_MATH</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <NoWarn>CA1416;CS3021</NoWarn>
+    <DefineConstants>OPENTK_DLL;OPENTK_MATH</DefineConstants>
+  </PropertyGroup>
+</Project>
