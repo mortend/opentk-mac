@@ -1,6 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <PackageId>OpenTK.macOS</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>The Open Toolkit library</Authors>
+    <Company>The Open Toolkit library</Company>
+    <PackageTags>OpenTK;OpenGL;C#;F#;.NET;Vector;Math;Game;Graphics;macOS;.NET6</PackageTags>
+    <Description>
+      This is a version of OpenTK that is modified to work on .NET 6.0 with Microsoft.macOS.Sdk.
+    </Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <PropertyGroup>
     <TargetFramework>net6.0-macOS</TargetFramework>
     <RootNamespace>OpenTK</RootNamespace>
     <AssemblyName>OpenTK</AssemblyName>
