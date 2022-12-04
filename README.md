@@ -1,5 +1,7 @@
 # OpenTK for .NET 6.0 on macOS
 
+[![NuGet](https://img.shields.io/nuget/v/OpenTK.macOS.svg?style=flat-square)](https://www.nuget.org/packages/OpenTK.macOS)
+
 This is a version of OpenTK that is modified to work on .NET 6.0 with Microsoft.macOS.Sdk.
 
 ## Sources
