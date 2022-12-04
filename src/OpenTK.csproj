@@ -9,9 +9,13 @@
     <Description>
       This is a version of OpenTK that is modified to work on .NET 6.0 with Microsoft.macOS.Sdk.
     </Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/mortend/opentk-mac</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\LICENSE" Pack="true" PackagePath="\" />
     <None Include="..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
@@ -23,11 +27,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <NoWarn>CA1416;CS3021</NoWarn>
+    <NoWarn>CA1416;CS3021;BI1234</NoWarn>
     <DefineConstants>OPENTK_DLL;OPENTK_MATH</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <NoWarn>CA1416;CS3021</NoWarn>
+    <NoWarn>CA1416;CS3021;BI1234</NoWarn>
     <DefineConstants>OPENTK_DLL;OPENTK_MATH</DefineConstants>
   </PropertyGroup>
 </Project>
