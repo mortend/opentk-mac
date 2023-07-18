@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageId>OpenTK.macOS</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>The Open Toolkit library</Authors>
     <Company>The Open Toolkit library</Company>
     <PackageTags>OpenTK;OpenGL;C#;F#;.NET;Vector;Math;Game;Graphics;macOS;.NET6</PackageTags>
