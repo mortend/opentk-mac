@@ -21,6 +21,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0-macOS</TargetFramework>
+    <SupportedOSPlatformVersion>10.14</SupportedOSPlatformVersion>
     <RootNamespace>OpenTK</RootNamespace>
     <AssemblyName>OpenTK</AssemblyName>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
